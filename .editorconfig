@@ -75,6 +75,8 @@ dotnet_remove_unnecessary_suppression_exclusions = none
 dotnet_style_allow_multiple_blank_lines_experimental = true:none
 dotnet_style_allow_statement_immediately_after_block_experimental = false
 
+# IDE2003: Blank line required between block and subsequent statement
+dotnet_diagnostic.IDE2003.severity = none
 
 #### C# Coding Conventions ####
 
