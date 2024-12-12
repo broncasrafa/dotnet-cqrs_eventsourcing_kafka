@@ -21,7 +21,7 @@ insert_final_newline = true
 
 # Organize usings
 dotnet_separate_import_directive_groups = false
-dotnet_sort_system_directives_first = false
+dotnet_sort_system_directives_first = true
 file_header_template = unset
 
 # this. and Me. preferences
@@ -289,6 +289,12 @@ dotnet_diagnostic.CA2007.severity = none
 
 dotnet_diagnostic.IDE0005.severity = none
 
+# IDE0021: Usar o corpo da expressão para construtores
+dotnet_diagnostic.IDE0021.severity = none
+
+# IDE0290: Usar construtor primário
+dotnet_diagnostic.IDE0290.severity = none
+
 # IDE0055: Regra de formatação (Fix formatting)
 dotnet_diagnostic.IDE0055.severity = none
 
@@ -308,7 +314,7 @@ dotnet_diagnostic.CA1056.severity = none
 dotnet_analyzer_diagnostic.category-StyleCop.CSharp.DocumentationRules.severity = none
 
 # Default severity for analyzer remove unnecessary using directives (IDE0005)
-dotnet_analyzer_diagnostic.category-Style.severity = none
+# dotnet_analyzer_diagnostic.category-Style.severity = none
 
 # SA1413: Use trailing comma in multi-line initializers
 dotnet_diagnostic.SA1413.severity = none
