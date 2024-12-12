@@ -266,6 +266,9 @@ dotnet_diagnostic.CA1810.severity = none
 # CA1032: Implement standard exception constructors
 dotnet_diagnostic.CA1032.severity = none
 
+# CA1515: Consider making public types internal
+dotnet_diagnostic.CA1515.severity = none
+
 # S3925: "ISerializable" should be implemented correctly
 dotnet_diagnostic.S3925.severity = none
 
@@ -285,6 +288,9 @@ dotnet_diagnostic.S6966.severity = none
 dotnet_diagnostic.CA2007.severity = none
 
 dotnet_diagnostic.IDE0005.severity = none
+
+# IDE0055: Regra de formatação (Fix formatting)
+dotnet_diagnostic.IDE0055.severity = none
 
 # Default severity for analyzer diagnostics with category 'StyleCop.CSharp.NamingRules'
 dotnet_analyzer_diagnostic.category-StyleCop.CSharp.NamingRules.severity = none
