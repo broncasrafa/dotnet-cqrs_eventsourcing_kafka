@@ -39,7 +39,7 @@ public abstract class AggregateRoot
 }
 
 /*
-
+* Beneficios do AggregateRoot
 * Ele gerencia qual método apply é invocado no Aggregate concreto com base no tipo de evento.
 * Confirma as alterações que foram aplicadas ao Aggregate.
 * A Aggregate Root é a entidade dentro do agregado que é responsável por sempre mantê-lo em um estado consistente.
