@@ -142,3 +142,9 @@ public class PostAggregate : AggregateRoot
         RaiseEvent(new PostRemovedEvent(id: _id));
     }
 }
+/*
+A validação deve sempre ocorrer antes que o Aggregate levante (raise) um evento, porque um cliente pode passar 
+informações incorretas que não queremos que afetem o estado do Aggregate. Uma vez que um evento tenha sido levantado (raised), 
+ele será aplicado ao Aggregate e persistido no armazenamento de eventos. Devemos proteger o armazenamento de eventos 
+de eventos que contenham erros ou dados não validados.
+*/

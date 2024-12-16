@@ -37,3 +37,12 @@ public abstract class AggregateRoot
         }
     }
 }
+
+/*
+
+* Ele gerencia qual método apply é invocado no Aggregate concreto com base no tipo de evento.
+* Confirma as alterações que foram aplicadas ao Aggregate.
+* A Aggregate Root é a entidade dentro do agregado que é responsável por sempre mantê-lo em um estado consistente.
+* A Aggregate Root mantém a lista de alterações não confirmadas na forma de eventos, que precisam ser aplicadas ao agregado e persistidas no armazenamento de eventos.
+
+*/
