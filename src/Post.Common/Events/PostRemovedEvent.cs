@@ -5,7 +5,8 @@ namespace Post.Common.Events;
 
 public class PostRemovedEvent : BaseEvent
 {
-    public PostRemovedEvent() : base(nameof(PostRemovedEvent))
+    public PostRemovedEvent(Guid id) : base(nameof(PostRemovedEvent))
     {
+        Id = id;
     }
 }

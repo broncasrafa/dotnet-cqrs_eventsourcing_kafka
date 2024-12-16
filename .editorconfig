@@ -294,6 +294,31 @@ dotnet_diagnostic.CA2208.severity = none
 # CA2201: Não acionar tipos de exceção reservados
 dotnet_diagnostic.CA2201.severity = none
 
+# CA1024: Usar propriedades quando apropriado
+dotnet_diagnostic.CA1024.severity = none
+
+# CA1051: Não declarar campos de instância visíveis
+dotnet_diagnostic.CA1051.severity = none
+
+# CA1062: Validar argumentos de métodos públicos
+dotnet_diagnostic.CA1062.severity = none
+
+# CA1030: Usar eventos quando apropriado
+dotnet_diagnostic.CA1030.severity = none
+
+# CA1812: Evitar classes internas sem instâncias
+dotnet_diagnostic.CA1812.severity = none
+
+# CA1822: Marcar membros como estáticos
+dotnet_diagnostic.CA1822.severity = none
+
+# CA1852: selar tipos internos
+dotnet_diagnostic.CA1852.severity = none
+
+# CA1309: Usar StringComparison ordinal
+dotnet_diagnostic.CA1309.severity = none
+
+
 # SA1515: Single-line comment should be preceded by blank line
 dotnet_diagnostic.SA1515.severity = none
 dotnet_diagnostic.S6966.severity = none

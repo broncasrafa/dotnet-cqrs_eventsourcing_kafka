@@ -10,7 +10,12 @@ public class CommentUpdatedEvent : BaseEvent
     public DateTime CommentUpdatedDate { get; set; } = DateTime.UtcNow;
 
 
-    public CommentUpdatedEvent() : base(nameof(CommentUpdatedEvent))
+    public CommentUpdatedEvent(Guid id, Guid commentId, string comment, string username) : base(nameof(CommentUpdatedEvent))
     {
+        Id = id;
+        CommentId = commentId;
+        Comment = comment;
+        Username = username;
+        CommentUpdatedDate = DateTime.UtcNow;
     }
 }

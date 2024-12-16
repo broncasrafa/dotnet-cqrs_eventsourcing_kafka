@@ -9,7 +9,11 @@ public class PostCreatedEvent : BaseEvent
     public DateTime DatePosted { get; set; } = DateTime.UtcNow;
 
 
-    public PostCreatedEvent() : base(nameof(PostCreatedEvent))
+    public PostCreatedEvent(Guid id, string author, string message) : base(nameof(PostCreatedEvent))
     {
+        Id = id;
+        Author = author;
+        Message = message;
+        DatePosted = DateTime.UtcNow; 
     }
 }

@@ -3,11 +3,13 @@
 namespace Post.Common.Events;
 
 
-public class PostUpdatedEvent : BaseEvent
+public class PostMessageUpdatedEvent : BaseEvent
 {
     public string Message { get; set; }
 
-    public PostUpdatedEvent() : base(nameof(PostUpdatedEvent))
+    public PostMessageUpdatedEvent(Guid id, string message) : base(nameof(PostMessageUpdatedEvent))
     {
+        Id = id;
+        Message = message;
     }
 }
