@@ -1,5 +1,6 @@
 # This workflow will build a .NET project
 # For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-net
+
 name: "1 - [FEAT] Build"
 
 on:
@@ -7,7 +8,7 @@ on:
   push:
     branches:
       - main
-      - "feature**"
+      - "feature**"  # Para todas as branches que começam com "feature"
   pull_request:
     branches:
       - main
@@ -15,9 +16,6 @@ on:
 
 env:
   DOTNET_VERSION: '8.0.x'
-  PROJECT_PATHS: |
-    ./src/Post.Command.Api/Post.Command.Api.csproj
-    ./src/Post.Query.Api/Post.Query.Api.csproj
 
 jobs:
   build:
@@ -35,10 +33,10 @@ jobs:
 
     - name: Restore and Build Projects
       run: |
-        for PROJECT in ${{ env.PROJECT_PATHS }}; do
+        PROJECT_PATHS="./src/Post.Command.Api/Post.Command.Api.csproj ./src/Post.Query.Api/Post.Query.Api.csproj"
+        for PROJECT in $PROJECT_PATHS; do
           echo "Restoring packages for $PROJECT"
-          dotnet restore $PROJECT
+          dotnet restore "$PROJECT"
           echo "Building $PROJECT"
-          dotnet build $PROJECT -c Release --no-restore
+          dotnet build "$PROJECT" -c Release --no-restore
         done
-
