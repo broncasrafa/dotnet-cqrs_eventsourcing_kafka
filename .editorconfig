@@ -306,6 +306,15 @@ dotnet_diagnostic.CA1062.severity = none
 # CA1030: Usar eventos quando apropriado
 dotnet_diagnostic.CA1030.severity = none
 
+# CA1032: Implementar construtores de exceção padrão
+dotnet_diagnostic.CA1032.severity = none
+
+# CA1040: Evitar interfaces vazias
+dotnet_diagnostic.CA1040.severity = none
+
+# CA1716: Identificadores não devem corresponder a palavras-chave
+dotnet_diagnostic.CA1716.severity = none
+
 # CA1812: Evitar classes internas sem instâncias
 dotnet_diagnostic.CA1812.severity = none
 
@@ -315,8 +324,14 @@ dotnet_diagnostic.CA1822.severity = none
 # CA1852: selar tipos internos
 dotnet_diagnostic.CA1852.severity = none
 
+# CA1860: evite usar o método de extensão 'Enumerable.Any()'
+dotnet_diagnostic.CA1860.severity = none
+
 # CA1309: Usar StringComparison ordinal
 dotnet_diagnostic.CA1309.severity = none
+
+# CA2000: Descartar objetos antes de perder o escopo
+dotnet_diagnostic.CA2000.severity = none
 
 
 # SA1515: Single-line comment should be preceded by blank line
