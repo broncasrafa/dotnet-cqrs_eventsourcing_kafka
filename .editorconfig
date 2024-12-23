@@ -282,6 +282,9 @@ dotnet_diagnostic.IDE0052.severity = none
 # CA1515: Consider making public types internal
 dotnet_diagnostic.CA1515.severity = none
 
+dotnet_diagnostic.CA1848.severity = none
+dotnet_diagnostic.CA2254.severity = none
+
 # CA2007: não aguardar diretamente uma tarefa
 dotnet_diagnostic.CA2007.severity = none
 
